@@ -1,0 +1,40 @@
+#Scénario principale 
+Le client sélectionne ses produits et leur quantité
+Le client valide son panier
+Le client saisie son adresse de livraison
+Le client sélectionne son mode de paiement
+Le client entre ses coordonnées bancaires
+Le client valide sa commande et les infos liés à la livraison
+L'application affiche un message de validation de la commande
+
+##Le client n'est pas connecté à la validation du panier
+L'application affiche un écran de connexion
+Le client entre ses identifiants
+Le client est redirigé sur la page de commande (paiement et adresse)
+
+##Les identifiants du client sont incorrectes
+L'application affiche un message d'erreur
+L'application redirige vers la page de connexion
+
+##Les coordonnées bancaires sont fausses
+L'application affiche un message d'erreur
+L'application réinitialise la page du mode de paiement
+
+##Le produit ou la quantité n'est pas disponible
+L'application affiche un message d'erreur
+L'application demande si le client veut supprimer le produit du panier
+Si non le produit est gardé dans le panier mais retirer de la commande
+
+##Le client ne valide pas sa commande 
+L'application redirige vers le panier
+
+##Le client supprime des produits de son panier
+L'application met à jour le panier
+
+##Le client sélectionne un produit déjà présent dans le panier
+L'application affiche un message d'information que le produit est déjà dans le panier
+L'application propose d'annuler l'ajout ou de l'ajouter à la quantité actuelle du produit 
+
+##Le client ne valide pas son panier
+Le client peut continuer à naviguer sur le site
+L'application garde le panier
